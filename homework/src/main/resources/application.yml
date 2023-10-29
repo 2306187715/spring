@@ -1,0 +1,27 @@
+﻿spring:
+  datasource:
+    #mysql驱动
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot_mysql
+    username: root
+    password: root
+
+  servlet:
+    multipart:
+      # 单个文件上传最大值
+      max-file-size: 10MB
+      # 单次请求上传最大值
+      max-request-size: 100MB
+
+
+
+
+mybatis:
+  configuration:
+    # 驼峰命名
+    map-underscore-to-camel-case: true
+    # mysql日志打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
